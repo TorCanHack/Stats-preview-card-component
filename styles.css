@@ -74,6 +74,7 @@ body main .text-container .stats-text .stats {
     grid-template-rows: 446px;
     justify-content: center;
     align-content: center;
+    margin-top: -0.1rem;
   }
   body main div {
     order: 2;
