@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+}
+body main {
+  width: min(95%, 327px);
+  height: 780px;
+  margin-top: 80px;
+}
+body main div {
+  position: relative;
+  width: 100%;
+}
+body main div .backgroundImage {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+body main div::before {
+  position: absolute;
+  background-color: hsl(277, 64%, 61%);
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.7;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+body main .text-container {
+  background-color: hsl(244, 38%, 16%);
+  text-align: center;
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+body main .text-container h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.75rem;
+  color: white;
+}
+body main .text-container h1 span {
+  color: hsl(277, 64%, 61%);
+}
+body main .text-container .main-paragraph {
+  font-family: "Inter", sans-serif;
+  font-size: 0.938rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+body main .text-container .stats-text h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  margin-top: 2rem;
+}
+body main .text-container .stats-text .stats {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.75rem;
+  font-family: "Lexend Deca", sans-serif;
+  margin-top: -1rem;
+}
+@media screen and (min-width: 1400px) {
+  body main {
+    display: grid;
+    grid-template-columns: 540px 540px;
+    grid-template-rows: 446px;
+    justify-content: center;
+    align-content: center;
+  }
+  body main div {
+    order: 2;
+  }
+  body main div .backgroundImage {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 1rem;
+  }
+  body main div::before {
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 1rem;
+  }
+  body main .text-container {
+    order: 1;
+    text-align: left;
+    padding: 3rem 6rem 3rem 4rem;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 1rem;
+  }
+  body main .text-container h1 {
+    font-size: 2.25rem;
+  }
+  body main .text-container .main-paragraph {
+    margin-bottom: 2.5rem;
+  }
+  body main .text-container .stats-text {
+    display: flex;
+  }
+  body main .text-container .stats-text .stats {
+    position: relative;
+    top: 5rem;
+    right: 4rem;
+  }
+  body main .text-container .stats-text .com {
+    right: 3.5rem;
+  }
+  body main .text-container .stats-text .tem {
+    right: 2.8rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
